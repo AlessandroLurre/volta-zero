@@ -1,0 +1,135 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Untitled0.ipynb",
+      "provenance": [],
+      "authorship_tag": "ABX9TyOqIUEWJcCCprnc61iTcRRf",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/AlessandroLurre/volta-zero/blob/main/exercicio1_cientista_de_dados\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 1,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "xUz6rQTl8FMJ",
+        "outputId": "47db8724-e37c-4b14-b293-c3baf21141e7"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "<class 'int'>\n",
+            "<class 'float'>\n",
+            "<class 'complex'>\n"
+          ]
+        }
+      ],
+      "source": [
+        "print(type(37))\n",
+        "print(type(37.1))\n",
+        "print(type(37 + 1j))"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "nome = \"Alessadro\"\n",
+        "sobrenome = \"Lurrê\"\n",
+        "\n",
+        "Apresentacao = f\"Meu nome é {nome} {sobrenome}.\"\n",
+        "print(Apresentacao)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "XORyzf618RCX",
+        "outputId": "8387be17-4e19-4f29-e2e4-fcba18a31dec"
+      },
+      "execution_count": 2,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Meu nome é Alessadro Lurrê.\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "email = \"alessandrolurre@yahoo.com.br\"\n",
+        "meuemail = email[0:15]\n",
+        "\n",
+        "print(meuemail)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Ms-u7KX38gsP",
+        "outputId": "62223e42-b434-477d-879b-0d6e6ca373b7"
+      },
+      "execution_count": 3,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "alessandrolurre\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "vendas_ano = 12 * 1000\n",
+        "print(vendas_ano)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "NurdIdLy8mdL",
+        "outputId": "39869a9b-e797-44cd-923b-f6c5033712ea"
+      },
+      "execution_count": 4,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "12000\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
