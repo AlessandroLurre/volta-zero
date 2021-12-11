@@ -1,0 +1,405 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "name": "Python_M1_support material01_exercise.ipynb",
+      "provenance": [],
+      "toc_visible": true,
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/AlessandroLurre/volta-zero/blob/main/Exercicio_final_modulo_1\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "KJqp9AANOCtf"
+      },
+      "source": [
+        "<img src=\"https://raw.githubusercontent.com/andre-marcos-perez/ebac-course-utils/main/media/logo/newebac_logo_black_half.png\" alt=\"ebac-logo\">\n",
+        "\n",
+        "---\n",
+        "\n",
+        "# **Módulo** | Python: Variáveis & Tipos de Dados\n",
+        "Caderno de **Exercícios**<br> \n",
+        "Professor [André Perez](https://www.linkedin.com/in/andremarcosperez/)\n",
+        "\n",
+        "---"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "d9jDtUbDOE1-"
+      },
+      "source": [
+        "# **Tópicos**\n",
+        "\n",
+        "<ol type=\"1\">\n",
+        "  <li>Introdução ao Google Colab;</li>\n",
+        "  <li>Variáveis;</li>\n",
+        "  <li>Números;</li>\n",
+        "  <li><i>Strings;</i></li>\n",
+        "  <li>Boleanos.</li>\n",
+        "</ol>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "SmoHgt-lwkpD"
+      },
+      "source": [
+        "---"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "GABI6OW8OfQ2"
+      },
+      "source": [
+        "# **Exercícios**"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "muD1vxozykSC"
+      },
+      "source": [
+        "## 1\\. Google Colab"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "ahrFfCuBxJKs"
+      },
+      "source": [
+        "Crie uma célula de código que escreva o texto \"Olá mundo!\", utilize o comando `print`."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "Saudação = \"Ola mundo\"\n",
+        "print(Saudação)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "Cg3lmt34m4wV",
+        "outputId": "4f37011e-da95-4b15-8704-c68e652a043f"
+      },
+      "execution_count": 2,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "Ola mundo\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "KI9zQRT2xa7m"
+      },
+      "source": [
+        "Crie uma célua de texto e adicione uma imagem."
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "zMN1Q3jdwoJm"
+      },
+      "source": [
+        "---"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "tFYOPLS3xiwe"
+      },
+      "source": [
+        "## 2\\. Números"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "O2G9gt7tx2c-"
+      },
+      "source": [
+        "Preencha as células de código para preencher os valores de (A), (B) e (C) na tabela de ticket médio abaixo:\n",
+        "\n",
+        "<br>\n",
+        "\n",
+        "| Dia   | Valor Total Vendas | Qtd Total Vendas | Ticket Medio |\n",
+        "|-------|--------------------|------------------|--------------|\n",
+        "| 19/01 | (A)                | 3                | 320.52       |\n",
+        "| 20/01 | 834.47             | (B)              | 119.21       |\n",
+        "| 23/01 | 15378.12           | 5                | (C)          |"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "[ ] # (A)\n",
+        "qtd_vendas_19 = 3\n",
+        "tkt_19 = 320.52\n",
+        "\n",
+        "vl_vendas_19 = qtd_vendas_19 * tkt_19 \n",
+        "print(vl_vendas_19)"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "PbtpTfsMo4gc",
+        "outputId": "2b6a9949-8eb2-4c62-fd01-92a3d1325ad4"
+      },
+      "execution_count": 1,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "961.56\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "QQ1GBGHJzMmi",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "0f57ce07-c0a5-412f-de58-de4241d612d9"
+      },
+      "source": [
+        "# (B)\n",
+        "vl_vendas_20 = 834.47\n",
+        "tkt_20 = 119.21\n",
+        "\n",
+        "qtd_vendas_20 = vl_vendas_20 / tkt_20\n",
+        "print(qtd_vendas_20)\n"
+      ],
+      "execution_count": 2,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "7.000000000000001\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "W-li0nSMzKNa",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "85e64a72-b5d6-4c92-9702-571a5c483a1a"
+      },
+      "source": [
+        "# (C)\n",
+        "vl_vendas_23 = 15378.12\n",
+        "qtd_vendas_23 = 5\n",
+        "tkt_23 = vl_vendas_23 / qtd_vendas_23\n",
+        "print(tkt_23)\n"
+      ],
+      "execution_count": 3,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "3075.6240000000003\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "3eoP-Vj9yzh8"
+      },
+      "source": [
+        "---"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "yUJ6kdony6Pr"
+      },
+      "source": [
+        "## 3\\. Strings"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "KDuZpg-5zCvO"
+      },
+      "source": [
+        "Aplique três métodos distintos na *string* abaixo, você pode conferir alguns métodos neste [link](https://www.w3schools.com/python/python_ref_string.asp):"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "k9zbyf7BzjKj",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "7e4f0ff7-236c-4722-9295-5eafb5bca4c2"
+      },
+      "source": [
+        "cancao = 'Roda mundo, roda gigante, roda moinho, roda pião.'\n",
+        "\n",
+        "primeira_minuscula = cancao.casefold()\n",
+        "print(primeira_minuscula)\n",
+        "\n",
+        "maiuscula = cancao.upper()\n",
+        "print(maiuscula)\n",
+        "\n",
+        "procurar = cancao.find(\"gigante\")\n",
+        "print(procurar)"
+      ],
+      "execution_count": 10,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "roda mundo, roda gigante, roda moinho, roda pião.\n",
+            "RODA MUNDO, RODA GIGANTE, RODA MOINHO, RODA PIÃO.\n",
+            "17\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "guZMHXVq0FnC"
+      },
+      "source": [
+        "Extraia da string abaixo o valor da taxa **selic** na variável `selic` e o valor do **ano** na variavel `ano`. Imprima os valores na tela."
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "cbx_P4IQ0agK",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "671abb4b-7add-45c2-eebe-032f1487b22b"
+      },
+      "source": [
+        "noticia = 'Selic vai a 2,75% e supera expectativas; é a primeira alta em 6 anos.'\n",
+        "\n",
+        "selic = noticia[11:17]\n",
+        "print(selic)\n",
+        "\n",
+        "ano = noticia[61:63]\n",
+        "print(ano)\n"
+      ],
+      "execution_count": 25,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            " 2,75%\n",
+            " 6\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "wWzbu-OC0z3L"
+      },
+      "source": [
+        "---"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "no8w_Ati01xP"
+      },
+      "source": [
+        "## 4\\. Booleanos"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "D_0tC3SC099N"
+      },
+      "source": [
+        "Utilize a tabela da verdade para responder: qual o valor da variável x?"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "XwIEbxf91SpU",
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "outputId": "eaae3e94-4638-4457-a27a-313422f567c8"
+      },
+      "source": [
+        "a = False\n",
+        "b = True\n",
+        "\n",
+        "x = not a & b\n",
+        "print(not False)\n",
+        "print(not True)"
+      ],
+      "execution_count": 26,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "True\n",
+            "False\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
